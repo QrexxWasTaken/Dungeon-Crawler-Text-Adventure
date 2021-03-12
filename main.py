@@ -507,6 +507,12 @@ def dungeon():
 				time.sleep(1)
 				print(colored("+10 Coins","yellow"))
 				coinsgained += 10
+	bosshp = random.randint(50,75)
+	bossdmg = 5
+	while bosshp > 0:
+		bosshp -= damage
+		print("Bosses Health:",colored(bosshp,"red"))
+		time.sleep(1)
 										
 def clear(): 
   
